@@ -30,9 +30,9 @@
 
 - React Native Vector Icons: 13.0.0
 
-- Geliştirme Ortamı için (IDE) ise Visual Studio Code
+- Geliştirme Ortamı için Visual Studio Code
 
-- Emulator için ise Android Studio Emulator
+- Emulator için Android Studio Emulator
 
 ## Projeyi Kurma ve Çalıştırma
 
