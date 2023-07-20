@@ -1,34 +1,31 @@
 # Bus Ticket Reservation Application
 
-Kullandığım Teknolojiler ve Kütüphaneler:
+## Kullandığım Teknolojiler ve Kütüphaneler:
 
-"@react-native-community/datetimepicker": "6.7.3",
+- React: 18.2.0
 
-"@react-native-picker/picker": "2.4.8",
+- React Native: 0.71.8
 
-"@react-navigation/native": "^6.1.7",
+- Expo: 48.0.18
 
-"@react-navigation/native-stack": "^6.9.13",
+- Expo Status Bar: 1.4.4
 
-"expo": "~48.0.18",
+- React Navigation: 6.1.7
 
-"expo-status-bar": "~1.4.4",
+- React Native Safe Area Context: 4.5.0
 
-"react": "18.2.0",
+- React Native Screens: 3.20.0
 
-"react-native": "0.71.8",
+- React Navigation Stack: 6.9.13
 
-"react-native-safe-area-context": "4.5.0",
+- React Native DatePicker: 6.7.3
 
-"react-native-screens": "~3.20.0",
+- React Native Picker: 2.4.8
 
-"react-redux": "^8.1.1",
+- React Native Vector Icons: 13.0.0
 
-"redux": "^4.2.1",
 
-"@expo/vector-icons": "^13.0.0"
-
-Ekran Görüntüleri:
+## Ekran Görüntüleri:
 
 1.Giriş Ekranı
 ![Screenshot_1689857151](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/2c0b3b6f-3b00-4657-a092-1bce45dc2f57)
