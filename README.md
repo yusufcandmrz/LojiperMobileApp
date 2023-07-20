@@ -18,6 +18,10 @@
 
 - React Navigation Stack: 6.9.13
 
+- Redux: 4.2.1
+
+- React Redux: 8.1.1
+
 - React Native DatePicker: 6.7.3
 
 - React Native Picker: 2.4.8
