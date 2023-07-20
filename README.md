@@ -2,6 +2,8 @@
 
 ## Kullandığım Teknolojiler ve Kütüphaneler:
 
+- Node.js: 18.16.1
+
 - React: 18.2.0
 
 - React Native: 0.71.8
@@ -27,6 +29,10 @@
 - React Native Picker: 2.4.8
 
 - React Native Vector Icons: 13.0.0
+
+- Geliştirme Ortamı için (IDE) ise Visual Studio Code
+
+- Emulator için Android Studio Emulator
 
 ## Projeyi Kurma ve Çalıştırma
 
