@@ -32,7 +32,7 @@
 
 - Geliştirme Ortamı için (IDE) ise Visual Studio Code
 
-- Emulator için Android Studio Emulator
+- Emulator için ise Android Studio Emulator
 
 ## Projeyi Kurma ve Çalıştırma
 
