@@ -28,8 +28,34 @@
 
 - React Native Vector Icons: 13.0.0
 
+## Projeyi Kurma ve Çalıştırma
 
-## Ekran Görüntüleri:
+
+
+- Node.js ve npm Kurulumu:
+Öncelikle, bilgisayarınızda Node.js ve npm'in kurulu olması gerekmektedir. Expo, Node.js ve npm'i gerektirir. Node.js web sitesinden indirip kurabilirsiniz: https://nodejs.org/
+
+- Expo CLI Kurulumu:
+Ardından, Expo projelerini yönetmek için Expo CLI'yi kurmanız gerekecek. Terminal (komut satırı) veya komut istemcisini açın ve "npm install -g expo-cli" komutunu kullanarak Expo CLI'yi küresel olarak yükleyin.
+
+- Projeyi İndirme:
+Şimdi GitHub'da bulunan React Native Expo projesinin deposuna gidin ve projeyi sağ üst köşedeki yeşil "Code" düğmesine tıklayarak indirin. Ayrıca, Git yüklü ise terminalde "git clone https://github.com/yusufcandmrz/bus-ticket-reservation-application.git" komutu kullanarak da indirebilirsiniz.
+
+- Proje Bağımlılıklarını Kurma:
+Projenin dizinine gidin ve terminalde "npm install" komutu kullanarak projenin bağımlılıklarını kurun.
+
+- Projeyi Çalıştırma:
+Expo CLI kurulumundan sonra, terminalde proje dizinindeyken "expo start" komutu kullanarak Expo sunucusunu başlatın.
+
+- Emülatörde veya Fiziksel Cihazda Çalıştırma:
+QR kodunu Expo Client uygulaması ile tarayarak projeyi fiziksel cihazda çalıştırabilir veya Android Emülatörü veya iOS Simülatörü kullanarak projeyi sanal bir cihazda çalıştırabilirsiniz.
+
+  - Fiziksel cihazda: Expo Client uygulamasını App Store veya Google Play Store'dan indirin ve QR kodu tarayın.
+
+  - Emülatörde: Expo Developer Tools üzerinden "Run on Android/iOS simulator" seçeneğini seçin.
+
+
+## Ekranlar:
 
 1.Giriş Ekranı
 ![Screenshot_1689857151](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/2c0b3b6f-3b00-4657-a092-1bce45dc2f57)
