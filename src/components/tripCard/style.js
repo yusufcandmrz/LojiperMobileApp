@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container: {
+        backgroundColor: "white",
         flexDirection: "row",
         margin: 10,
         padding: 10,
@@ -9,10 +10,10 @@ export default StyleSheet.create({
         justifyContent: "space-around",
         borderWidth: 1,
         borderRadius: 10,
-        borderColor: "#FF7F00",
+        borderColor: "orange",
     },
     text: {
-        color: "#FF7F00",
+        color: "orange",
         fontSize: 15,
         fontWeight: "bold",
     }

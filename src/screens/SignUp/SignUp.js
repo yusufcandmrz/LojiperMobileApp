@@ -4,7 +4,8 @@ import styles from "./style";
 import CustomButton from "../../components/button/Button";
 import CustomTextInput from "../../components/textInput/TextInput";
 import { useNavigation } from "@react-navigation/native";
-import { Picker } from "@react-native-picker/picker";
+import SelectInput from "../../components/selectInput/SelectInput";
+import genders from "../../assets/genders";
 
 import { useDispatch } from "react-redux";
 
@@ -14,7 +15,7 @@ const SignUp = () => {
 
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
-    const [identifyNumber, setIdentifyNumber] = useState(null);
+    const [identifyNumber, setIdentifyNumber] = useState("");
     const [birthDate, setBirthDate] = useState("");
     const [gender, setGender] = useState("");
     const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ const SignUp = () => {
     const navigation = useNavigation();
 
     const handleSignUpButton = () => {
-        if (name == "" || surname == "" || identifyNumber == null || birthDate == "" || gender == "" || email == "" || password == "" || passwordAgain == "") {
+        if (name == "" || surname == "" || identifyNumber == "" || birthDate == "" || (gender == "" || gender == "Cinsiyet Seçiniz") || email == "" || password == "" || passwordAgain == "") {
             ToastAndroid.show('Lütfen Tüm Alanları Doldurun', ToastAndroid.TOP);
         }
         else if (password != passwordAgain) {
@@ -76,16 +77,11 @@ const SignUp = () => {
                     keyboardType={"numeric"}
                     maxLength={10}
                 />
-                <View style={styles.picker}>
-                    <Picker
-                        selectedValue={gender}
-                        onValueChange={setGender}
-                        style={{ color: "orange" }}>
-                        <Picker.Item label="Cinsiyet Seçiniz" enabled={false} />
-                        <Picker.Item label="Erkek" value="Erkek" />
-                        <Picker.Item label="Kadın" value="Kadın" />
-                    </Picker>
-                </View>
+                <SelectInput
+                    selectedValue={gender}
+                    onValueChange={setGender}
+                    data={genders}
+                />
                 <CustomTextInput
                     value={email}
                     onChangeText={setEmail}

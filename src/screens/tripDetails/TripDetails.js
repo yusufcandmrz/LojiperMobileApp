@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, FlatList, ScrollView, ToastAndroid } from "react-native";
-import trips from "../../../trips";
+import { View, Text, FlatList, ToastAndroid } from "react-native";
+import trips from "../../assets/trips";
 import SeatCard from "../../components/seatCard/SeatCard";
 import styles from "./style";
 import { useSelector } from "react-redux";
 import SelectedSeatCard from "../../components/selectedSeatCard/SelectedSeatCard";
-import { Picker } from "@react-native-picker/picker";
 import CustomTextInput from "../../components/textInput/TextInput";
 import CustomButton from "../../components/button/Button"
 import { useNavigation } from "@react-navigation/native";
+import SelectInput from "../../components/selectInput/SelectInput";
+import genders from "../../assets/genders";
 
 const TripDetails = ({ route }) => {
 
@@ -80,14 +81,7 @@ const TripDetails = ({ route }) => {
                             />
                             <View style={styles.selectedSeatsFlatlistContainer}>
                                 <View style={styles.selectSeatInputContainer}>
-                                    <Picker
-                                        style={{ color: "orange", borderWidth: 1, }}
-                                        selectedValue={selectedGender}
-                                        onValueChange={setSelectedGender}>
-                                        <Picker.Item label="Cinsiyet Seçiniz" enabled={false} />
-                                        <Picker.Item label="Erkek" value="Erkek" />
-                                        <Picker.Item label="Kadın" value="Kadın" />
-                                    </Picker>
+                                    <SelectInput selectedValue={selectedGender} onValueChange={setSelectedGender} data={genders} />
                                     <CustomTextInput
                                         value={selectedIdentifyNumber}
                                         onChangeText={setSelectedIdentifyNumber}

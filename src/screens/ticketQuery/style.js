@@ -9,11 +9,6 @@ export default StyleSheet.create({
     pickerContainer: {
         marginVertical: 10,
     },
-    picker: {
-        borderWidth: 1,
-        borderColor: "orange",
-        borderRadius: 10,
-    },
     selectDateStyle: {
         marginTop: 20,
     },
@@ -21,12 +16,12 @@ export default StyleSheet.create({
         color: "orange",
         fontWeight: "bold",
     },
-    button: {
+    buttonContainer: {
         alignSelf: "flex-end",
     },
     pickerText: {
         alignSelf: "center",
         color: "orange",
         fontWeight: "bold",
-    }
+    },
 });

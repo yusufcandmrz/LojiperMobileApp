@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, FlatList } from "react-native";
 import styles from "./style";
-import trips from "../../../trips";
+import trips from "../../assets/trips";
 import TripCard from "../../components/tripCard/TripCard";
 
 const TripList = ({ route }) => {

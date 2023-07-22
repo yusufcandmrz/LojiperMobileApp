@@ -3,7 +3,7 @@ import { View, Alert, ToastAndroid, Text, ActivityIndicator } from "react-native
 import styles from "./style";
 import CustomTextInput from "../../components/textInput/TextInput";
 import CustomButton from "../../components/button/Button";
-import trips from "../../../trips";
+import trips from "../../assets/trips";
 import { useNavigation } from "@react-navigation/native";
 
 const Payment = ({ route }) => {
@@ -30,6 +30,10 @@ const Payment = ({ route }) => {
         }
     }
 
+    const handleCancel = () => {
+        navigation.goBack();
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.tickedDetails}>
@@ -49,11 +53,10 @@ const Payment = ({ route }) => {
                 </View>
                 <View style={styles.buttonContainer}>
                     <CustomButton buttonTitle={"Öde"} onPress={handlePayment} />
-                    <CustomButton buttonTitle={"İptal Et"} />
+                    <CustomButton buttonTitle={"İptal Et"} onPress={handleCancel}/>
                 </View>
             </View>
             {spinnerVisibility && <ActivityIndicator style={styles.spinner} size={"large"} />}
-
         </View>
     )
 }

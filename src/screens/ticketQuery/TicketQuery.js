@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, Alert, ToastAndroid } from "react-native";
 import styles from "./style";
-import cities from "../../../cities";
-import { Picker } from "@react-native-picker/picker";
+import cities from "../../assets/cities";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import CustomButton from "../../components/button/Button";
 import { useNavigation } from "@react-navigation/native";
+import SelectInput from "../../components/selectInput/SelectInput";
 
 const TicketQuery = () => {
 
@@ -34,7 +34,7 @@ const TicketQuery = () => {
     };
 
     function handleSearchButton() {
-        if (departure == "" || arrival == "") {
+        if (departure == "" || arrival == "" && departure == "Şehir Seçiniz" || arrival == "Şehir Seçiniz") {
             ToastAndroid.show("Lütfen Tüm Alanları Doldurun", ToastAndroid.TOP);
         }
         else if (departure == arrival) {
@@ -50,29 +50,11 @@ const TicketQuery = () => {
         <View style={styles.container}>
             <View style={styles.pickerContainer}>
                 <Text style={styles.selectText}>Kalkış Noktası</Text>
-                <View style={styles.picker}>
-                    <Picker
-                        style={{ color: "orange" }}
-                        selectedValue={departure}
-                        onValueChange={setDeparture}>
-                        {Object.keys(cities).map((key) => (
-                            <Picker.Item label={cities[key]} value={cities[key]} key={key} />
-                        ))}
-                    </Picker>
-                </View>
+                <SelectInput selectedValue={departure} onValueChange={setDeparture} data={cities} />
             </View>
             <View style={styles.pickerContainer}>
                 <Text style={styles.selectText}>Varış Noktası</Text>
-                <View style={styles.picker}>
-                    <Picker
-                        style={{ color: "orange" }}
-                        selectedValue={arrival}
-                        onValueChange={setArrival}>
-                        {Object.keys(cities).map((key) => (
-                            <Picker.Item label={cities[key]} value={cities[key]} key={key} />
-                        ))}
-                    </Picker>
-                </View>
+                <SelectInput selectedValue={arrival} onValueChange={setArrival} data={cities} />
             </View>
             <View style={styles.selectDateStyle}>
                 <Text style={styles.pickerText}>Sefer Tarihi Seçiniz</Text>
@@ -86,7 +68,7 @@ const TicketQuery = () => {
                         minimumDate={minDate}
                     />
                 )}
-                <View style={styles.button}>
+                <View style={styles.buttonContainer}>
                     <CustomButton buttonTitle={"Ara"} onPress={handleSearchButton} />
                 </View>
             </View>

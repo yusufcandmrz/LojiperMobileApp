@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TouchableOpacity, Text, View, ToastAndroid } from "react-native";
 import styles from "./style";
-import trips from "../../../trips";
+import trips from "../../assets/trips";
 import { useSelector, useDispatch } from "react-redux";
 import Icon from "@expo/vector-icons/Fontisto";
 
@@ -49,7 +49,7 @@ const SeatCard = ({ item, tripId, gender, identifyNumber }) => {
     }
 
     const handleSelectSeat = () => {
-        if (gender == "" || identifyNumber == "") {
+        if ((gender == "" || gender == "Cinsiyet Seçiniz") || identifyNumber == "") {
             ToastAndroid.show("Lütfen Koltuk Seçmeden Önce Tüm Alanları Doldurun", ToastAndroid.TOP)
         }
         else if (isSelected) {

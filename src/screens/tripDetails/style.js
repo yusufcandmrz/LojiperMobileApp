@@ -26,9 +26,8 @@ export default StyleSheet.create({
         flex: 1,
     },
     selectSeatInputContainer: {
-        borderWidth: 1,
+        borderBottomWidth: 1,
         borderColor: "orange",
-        borderRadius: 10,
     },
     selectedSeatsFlatlist: {
         flex: 1,

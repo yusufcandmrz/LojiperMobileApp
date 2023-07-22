@@ -2,10 +2,10 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Provider } from "react-redux";
-import store from "./store";
+import store from "./src/redux/store";
 
-import Login from "./src/screens/Login/Login";
-import SignUp from "./src/screens/SignUp/SignUp";
+import Login from "./src/screens/login/Login";
+import SignUp from "./src/screens/signUp/SignUp";
 import TicketQuery from "./src/screens/ticketQuery/TicketQuery";
 import TripList from "./src/screens/tripList/TripList";
 import TripDetails from "./src/screens/tripDetails/TripDetails";
