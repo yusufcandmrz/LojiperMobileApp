@@ -1,6 +1,7 @@
 # Bus Ticket Reservation Application
 
-## Kullandığım Teknolojiler ve Kütüphaneler:
+
+## Kullandığım Teknolojiler ve Kütüphaneler
 
 - Node.js: 18.16.1
 
@@ -34,11 +35,11 @@
 
 - Emulator için Android Studio Emulator
 
+
 ## Projeyi Kurma ve Çalıştırma
 
 
-
-- Node.js ve npm Kurulumu:
+- Node.js ve npm Kurulumu
 Öncelikle, bilgisayarınızda Node.js ve npm'in kurulu olması gerekmektedir. Expo, Node.js ve npm'i gerektirir. Node.js web sitesinden indirip kurabilirsiniz: https://nodejs.org/
 
 - Expo CLI Kurulumu:
@@ -61,7 +62,7 @@ QR kodunu Expo Client uygulaması ile tarayarak projeyi fiziksel cihazda çalı�
   - Emülatörde: Expo Developer Tools üzerinden "Run on Android/iOS simulator" seçeneğini seçin.
 
 
-## Ekranlar:
+## Ekranlar
 
 1.Giriş Ekranı
 ![Screenshot_1690044538](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/758cdfb8-a548-4499-86fd-91f0b153fdae)
