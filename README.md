@@ -64,28 +64,28 @@ QR kodunu Expo Client uygulaması ile tarayarak projeyi fiziksel cihazda çalı�
 
 ## Ekranlar
 
-1.Giriş Ekranı
+Giriş Ekranı
 ![Screenshot_1690044538](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/758cdfb8-a548-4499-86fd-91f0b153fdae)
 
 
-2.Kayıt Ekranı
+Kayıt Ekranı
 ![Screenshot_1690044543](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/7837e89e-c9fb-4a8c-a59e-06983f50bb91)
 
 
-3.Bilet Sorgulama Ekranı
+Bilet Sorgulama Ekranı
 ![Screenshot_1690044637](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/8ce21c34-dd1b-45f8-a587-63133cb48944)
 
 
-4.Sefer Listesi Ekranı
+Sefer Listesi Ekranı
 ![Screenshot_1690044658](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/2aa3c1e6-abbe-490b-8a4f-62e9f02c3b8e)
 
 
-5.Sefer Detayları Ekranı
+Sefer Detayları Ekranı
 ![Screenshot_1690044673](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/64ae5b3d-9044-4af0-ad9e-3b44754819ab)
 ![Screenshot_1690044719](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/a88da935-b1d0-44ab-9d8d-f8cb0d44dcde)
 
 
-7.Ödeme Ekranı
+Ödeme Ekranı
 ![Screenshot_1690044724](https://github.com/yusufcandmrz/bus-ticket-reservation-application/assets/93606208/e5c2a72a-45bf-4d15-afa1-a6b61c3b45c7)
 
 
